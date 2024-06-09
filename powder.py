@@ -11,6 +11,8 @@ from queue import Queue
 import io   
 import soundfile as sf
 import threading
+import psycopg2
+from sqlalchemy import create_engine
 import pandas as pd
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
 from langchain.agents.agent_types import AgentType
@@ -32,7 +34,15 @@ class TalkingLLM():
         self.llm_queue = Queue()
         self.create_agent()
 
+    def obter_dados_do_banco(self):
+            # Criar a conexão com o banco de dados usando SQLAlchemy
+            engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5432/powder_db')
 
+            # Consultar os dados da tabela
+            query = "SELECT * FROM banco_central;"
+            df = pd.read_sql_query(query, engine)
+
+            return df
     def start_or_stop_recording(self):
         if self.is_recording:
             self.is_recording = False
@@ -48,7 +58,11 @@ class TalkingLLM():
         Você se chama Powder, e esta trabalhando com um dataframe Pandas no Python. O nome do dataframe é df. 
 
         '''
-        df = pd.read_csv('df_rent.csv')
+        
+
+        #df = pd.read_csv('df_rent.csv')
+        df = self.obter_dados_do_banco()
+
         self.agent = create_pandas_dataframe_agent(
             self.llm,
             df,
