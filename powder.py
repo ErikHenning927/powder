@@ -21,7 +21,7 @@ client = openai.Client()
 
 
 class TalkingLLM():
-    def __init__(self, model="gpt-3.5-turbo-0613", whisper_size="tiny"):
+    def __init__(self, model="gpt-3.5-turbo-0613", whisper_size="small"):
         self.is_recording = False
         self.audio_data = []
         self.samplerate=44100
@@ -61,7 +61,6 @@ class TalkingLLM():
 
 
     def save_and_transcribe(self):
-        print('Agent Started')
         print("Saving the recording...")
         if "temp.wav" in os.listdir(): os.remove("temp.wav")
         wav_file = wave.open("test.wav", 'wb')
@@ -106,6 +105,7 @@ class TalkingLLM():
 
     
     def run(self):
+        print('Agent started!')
         t1 = threading.Thread(target=self.convert_and_play)
         t1.start()
 
@@ -126,7 +126,7 @@ class TalkingLLM():
                 return lambda k: f(l.canonical(k))
 
             hotkey = keyboard.HotKey(
-                keyboard.HotKey.parse('<space>'),
+                keyboard.HotKey.parse('<ctrl>'),
                 on_activate)
             with keyboard.Listener(
                     on_press=for_canonical(hotkey.press),
