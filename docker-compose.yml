@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: sql_server_britaniaAilocal
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Teste123
+    ports:
+      - "1433:1433"
+    networks:
+      - sqlserver-network
+
+networks:
+  sqlserver-network:
+    driver: bridge
