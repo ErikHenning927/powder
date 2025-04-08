@@ -5,27 +5,26 @@ import plotly.express as px
 st.set_page_config(layout="wide")
 
 
-df = pd.read_csv("finances_att.csv")
+df = pd.read_csv("finances.csv", delimiter=';')
 del df['ID']
-df["Data"] = pd.to_datetime(df["Data"])
-df["Data"] = df["Data"].apply(lambda x: x.date())
+
 df = df[df["Categoria"]!="Receitas"]
-df["Valor"] = 1
+df["Valor"] = df["Valor"]
 
 def filter_data(df, mes, selected_categories):
-    df_filtered = df[df['Data'] == mes]
+    df_filtered = df[df['Mês'] == mes]
     if selected_categories:
         df_filtered = df_filtered[df_filtered['Categoria'].isin(selected_categories)]
     return df_filtered
 
 # Título do Dashboard
-st.title("Dashboard teste")
+st.title("Controle financeiro")
 
 # Filtros de data
 st.sidebar.header("Filtros")
 
 # Definir intervalo de data
-mes = st.sidebar.selectbox("Data", df["Data"].unique())
+mes = st.sidebar.selectbox("Mês", df["Mês"].unique())
 
 
 # Filtro de categoria
@@ -38,7 +37,7 @@ df_filtered = filter_data(df, mes, selected_categories)
 # ====================
 c1, c2 = st.columns([0.6, 0.4])
 
-# c1.subheader("Tabela de Finanças Filtradas")
+c1.subheader("Tabela de Finanças")
 c1.dataframe(df_filtered)
  
 

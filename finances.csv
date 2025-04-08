@@ -1,6 +1,13 @@
-ID,Data,Valor,Descrição,Categoria
-0,02/09/2024,125668,Pix - Recebido - 01/09 01:03 41075192000182 ASIMOV ACAD,
-1,02/09/2024,1874332,Pix - Recebido - 02/09 09:20 41075192000182 ASIMOV ACAD,
-2,02/09/2024,-170,Compra com Cartão - 31/08 18:35 MP*KAKABENTO,
-3,02/09/2024,-150,Compra com Cartão - 01/09 06:02 HOTEL NACIONAL INN B,
-4,02/09/2024,-676,Compra com Cartão - 01/09 06:07 POP 01Set 06h07min,
+ID;Mês;Valor;Forma de pagamento;Categoria;Descrição
+0;Abril;125668;Pix - Recebido;Receitas;Vale
+1;Abril;1874332;Pix - Recebido;Receitas;Pagamento
+2;Abril;170;Débito Nubank;Contas Fixas;Conta luz(Copel)
+3;Abril;150;Débito Nubank;Alimentação;Mercado
+4;Abril;676;Débito Nubank;Contas Fixas;Conta internet(Oi)
+5;Abril;524;Débito Nubank;Saúde;Plano de saúde(Unimed)
+6;Maio;125668;Pix - Recebido;Receitas;Vale
+7;Maio;1874332;Pix - Recebido;Receitas;Pagamento
+8;Maio;170;Débito Nubank;Contas Fixas;Conta luz(Copel)
+9;Maio;150;Débito Nubank;Alimentação;Mercado
+10;Maio;676;Débito Nubank;Contas Fixas;Conta internet(Oi)
+11;Maio;524;Débito Nubank;Saúde;Plano de saúde(Unimed)
