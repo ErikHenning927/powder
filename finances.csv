@@ -1,13 +1,41 @@
 ID;Mês;Valor;Forma de pagamento;Categoria;Descrição
-0;Abril;125668;Pix - Recebido;Receitas;Vale
-1;Abril;1874332;Pix - Recebido;Receitas;Pagamento
-2;Abril;170;Débito Nubank;Contas Fixas;Conta luz(Copel)
-3;Abril;150;Débito Nubank;Alimentação;Mercado
-4;Abril;676;Débito Nubank;Contas Fixas;Conta internet(Oi)
-5;Abril;524;Débito Nubank;Saúde;Plano de saúde(Unimed)
-6;Maio;125668;Pix - Recebido;Receitas;Vale
-7;Maio;1874332;Pix - Recebido;Receitas;Pagamento
-8;Maio;170;Débito Nubank;Contas Fixas;Conta luz(Copel)
-9;Maio;150;Débito Nubank;Alimentação;Mercado
-10;Maio;676;Débito Nubank;Contas Fixas;Conta internet(Oi)
-11;Maio;524;Débito Nubank;Saúde;Plano de saúde(Unimed)
+1;Abril;2040;Recebimento;Receitas;Vale
+2;Abril;1984;Recebimento;Receitas;Pagamento
+3;Abril;540;Recebimento;Receitas;Refeição
+4;Abril;1800;Boleto;Habitação;Aluguel
+5;Abril;309;Boleto;Habitação;Condomínio
+6;Abril;150;Boleto;Habitação;Luz
+7;Abril;69.9;Boleto;Habitação;Internet
+8;Abril;109;Pix;Habitação;Gás
+9;Abril;75;Boleto;Habitação;Celular
+10;Abril;255.02;Crédito;Automóvel;Seguro
+11;Abril;271.69;Débito Nubank;Automóvel;Combustível
+12;Abril;90;Desconto em folha;Saúde;Unimed
+13;Abril;200.49;Boleto;Educação;Facear
+14;Abril;17.45;Crédito;Assinaturas;Spotify
+15;Abril;9.95;Crédito;Assinaturas;Prime
+16;Abril;15;Crédito;Assinaturas;Youtube
+17;Abril;10.45;Crédito;Assinaturas;Netflix
+18;Abril;15.5;Crédito;Assinaturas;Max
+19;Abril;139.9;Crédito;Assinaturas;Academia
+20;Abril;120;Crédito;Assinaturas;ChatGPT
+21;Maio;139.9;Crédito;Assinaturas;Academia
+22;Maio;170;Crédito;Assinaturas;Academia(Multa)
+23;Maio;2040;Recebimento;Receitas;Vale
+24;Maio;1984;Recebimento;Receitas;Pagamento
+25;Maio;540;Recebimento;Receitas;Refeição
+26;Maio;1500;Boleto;Habitação;Aluguel
+27;Maio;309;Boleto;Habitação;Condomínio
+28;Maio;150;Boleto;Habitação;Luz
+29;Maio;69.9;Boleto;Habitação;Internet
+30;Maio;109;Pix;Habitação;Gás
+31;Maio;75;Boleto;Habitação;Celular
+32;Maio;255.02;Crédito;Automóvel;Seguro
+33;Maio;;Débito Nubank;Automóvel;Combustível
+34;Maio;90;Desconto em folha;Saúde;Unimed
+35;Maio;200.49;Boleto;Educação;Facear
+36;Maio;17.45;Crédito;Assinaturas;Spotify
+37;Maio;9.95;Crédito;Assinaturas;Prime
+38;Maio;15;Crédito;Assinaturas;Youtube
+39;Maio;10.45;Crédito;Assinaturas;Netflix
+40;Maio;15.5;Crédito;Assinaturas;Max
